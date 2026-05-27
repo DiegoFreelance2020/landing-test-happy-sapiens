@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* --font-display is injected by next/font (Anton) in app/layout.tsx */
+}
+
+html,
+body {
+  background-color: theme("colors.brand.cream");
+  color: theme("colors.brand.ink");
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-brand-sage text-white font-semibold tracking-wide
+           rounded-full transition-colors
+           hover:bg-brand-sage-dark
+           focus:outline-none focus:ring-2 focus:ring-brand-sage-dark focus:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-white text-brand-sage-dark font-semibold tracking-wide
+           border-2 border-brand-sage rounded-full transition-colors
+           hover:bg-brand-sage hover:text-white
+           focus:outline-none focus:ring-2 focus:ring-brand-sage-dark focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-black/5 p-6 sm:p-8;
+  }
+
+  .option-button {
+    @apply w-full text-left px-5 py-4 rounded-xl border-2 transition-colors
+           bg-white border-black/10 hover:border-brand-sage focus:outline-none
+           focus:ring-2 focus:ring-brand-sage focus:ring-offset-2;
+  }
+
+  .option-button[aria-pressed="true"] {
+    @apply border-brand-sage bg-brand-mint/40;
+  }
+}
