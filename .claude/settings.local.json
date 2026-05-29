@@ -7,7 +7,8 @@
       "Read(//tmp/**)",
       "Bash(mkdir -p \"C:/Users/Diego/Documents/Proyectos Geniorama/landing-test-happy sapiens/public\")",
       "Bash(cp /tmp/happy-logo.svg \"C:/Users/Diego/Documents/Proyectos Geniorama/landing-test-happy sapiens/public/logo.svg\")",
-      "Bash(curl -sSL -o \"C:/Users/Diego/Documents/Proyectos Geniorama/landing-test-happy sapiens/public/logo.svg\" \"https://comunidad.happysapiens.co/hs-logo.svg\")"
+      "Bash(curl -sSL -o \"C:/Users/Diego/Documents/Proyectos Geniorama/landing-test-happy sapiens/public/logo.svg\" \"https://comunidad.happysapiens.co/hs-logo.svg\")",
+      "Bash(git checkout *)"
     ]
   }
 }
