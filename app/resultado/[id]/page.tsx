@@ -103,14 +103,6 @@ export default async function ResultPage({ params }: Params) {
           >
             Ir a la tienda
           </a>
-          <a
-            href={CTA_COMUNIDAD_URL}
-            className="btn-secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Únete a la comunidad
-          </a>
         </div>
       </div>
 
